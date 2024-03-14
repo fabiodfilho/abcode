@@ -1,89 +1,106 @@
-  .navigation_header {
-    font-family: Mohave;
-    font-size: 32.3px;
-    letter-spacing: -1.61px;
-    color: #fff;
-  }
+.navigation_header {
+  font-family: Mohave;
+  font-size: 32.3px;
+  letter-spacing: -1.61px;
+  color: #fff;
+}
 
-  body {
-    height: 2768px;
-    background-image: linear-gradient(to bottom, #000, #0a071d);
-  }
+body {
+  height: 2768px;
+  background-image: linear-gradient(to bottom, #000, #0a071d);
+}
 
-  .header,
-  .navigation_header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-  }
-
-  .header {
-    justify-content: space-between;
-    padding: 0 4%;
-    height: 10em;
-  }
-
-  .navigation_header {
-    gap: 2em;
-  }
-
-  .navigation_header a {
-    text-decoration: none;
-    color: #fff;
-    transition: 1s;
-    white-space: nowrap;
-    
-    }
+.header,
+.navigation_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   
-  .ret_botao_navigation {
-    -webkit-text-stroke: 1.6px #000;
-    font-family: Mohave;
-    font-size: 43px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: -2.15px;
-    text-align: center;
-    color: #fff;
+}
 
-    border-radius: 17.1px;
-    border: solid 1.6px #000;
-    padding: 2%;
-    background-image: linear-gradient(to bottom, #04034f 0%, #8929d4);
+.header {
+  justify-content: space-between;
+  padding: 0 4%;
+  height: 10em;
+}
+
+.navigation_header {
+  gap: 2em;
+}
+
+.navigation_header a {
+  text-decoration: none;
+  color: #fff;
+  transition: 1s;
+  white-space: nowrap;
+  
   }
 
+.ret_botao_navigation {
+  -webkit-text-stroke: 1.6px #000;
+  font-family: Mohave;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -2.15px;
+  text-align: center;
+  color: #fff;
+
+  border-radius: 17.1px;
+  border: solid 1.6px #000;
+  padding: 2%;
+  background-image: linear-gradient(to bottom, #04034f 0%, #8929d4);
+}
 
 
-  .A-programao-para-todos {
-    font-family: Mohave;
-    font-size: 136.9px;
-    line-height: 1;
-    letter-spacing: -6.85px;
-    text-align: middle;
-    color: #fff;
+
+.A-programao-para-todos {
+  font-family: Mohave;
+  font-size: 136.9px;
+  line-height: 1;
+  letter-spacing: -6.85px;
+  text-align: middle;
+  color: #fff;
+}
+
+.A-programao-para-todos .text-style-1 {
+  font-size: 144.5px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -7.22px;
+}
+
+.nome_barra_mkt {
+  position: static;
+  width: 707px;
+}
+
+.img_barra_mkt {
+  position: static;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; 
+  padding-left: 4%;
+}
+
+.table_cursos {
+  display: flex;
+  justify-content: center;
+  th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
   }
+  
+}
 
-  .A-programao-para-todos .text-style-1 {
-    font-size: 144.5px;
-    font-weight: 500;
-    font-style: italic;
-    line-height: 1;
-    letter-spacing: -7.22px;
-  }
-
-  .nome_barra_mkt {
-    position: static;
-    width: 707px;
-  }
-
-  .img_barra_mkt {
-    position: static;
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh; 
-    padding-left: 4%;
-  }
+.table_cursos_img {
+ width: 120%;
+ height: 120%;
+}
