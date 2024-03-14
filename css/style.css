@@ -152,3 +152,75 @@ label {
     transform: rotate(-270deg);
     background-color: #ebebeb;
 }
+
+.notification {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.notification h2 {
+  color: #333;
+}
+
+.notification p {
+  color: #666;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-image: linear-gradient(to bottom, #04034f 0%, #8929d4);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-image: linear-gradient(to bottom, #04034f 0%, #8929d4);
+}
+
+.form-container {
+  width: 231px;
+  height: 32px; 
+  margin: 8.5px 27.75px 9px 0; 
+  padding: 8.5px 184px 8.5px 11.5px; 
+  border-radius: 10.5px; 
+  background-color: #f0f0f0;
+}
+
+.Duvidas {
+  width: 119px;
+  height: 46px;
+  flex-grow: 0;
+  margin: 24px 73px 17px 8px;
+  font-family: Mohave;
+  font-size: 45.6px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -2.28px;
+  text-align: left;
+  color: #04034f;
+}
+
+.Contato {
+  width: 122px;
+  height: 46px;
+  flex-grow: 0;
+  margin: 24px 63px 17px 15px;
+  font-family: Mohave;
+  font-size: 45.6px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -2.28px;
+  text-align: left;
+  color: #04034f;
+}
+
