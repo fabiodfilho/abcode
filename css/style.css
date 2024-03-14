@@ -71,6 +71,7 @@ body {
   letter-spacing: -7.22px;
 }
 
+
 .nome_barra_mkt {
   position: static;
   width: 707px;
@@ -104,3 +105,258 @@ body {
  width: 120%;
  height: 120%;
 }
+
+.titulo {
+  position: absolute;
+  top: 43%;
+  left: 13%;
+  margin-bottom: 10px;
+  font-family: Mohave;
+  font-size: 140px; /* tamanho da font */
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -8.88px;
+  color: #fff;
+}
+
+.mask-group-java {
+  display: block;
+  flex-direction: column;
+  width: 1438px;
+  height: 449px;
+  padding: 34px 64px 0 180px;
+  box-shadow: 0 7.8px 7.8px 0 rgba(0, 0, 0, 0.25), inset 0 7.8px 22.1px 0 rgba(255, 252, 252, 0.25);
+  background-image: radial-gradient(circle at 50% 50%, #e97331 22%, #f00 76%);
+}
+
+.mask-group-htmlecss {
+  display: block;
+  flex-direction: column;
+  width: 1438px;
+  height: 449px;
+  padding: 34px 64px 0 180px;
+  box-shadow: 0 7.8px 7.8px 0 rgba(0, 0, 0, 0.25), inset 0 7.8px 22.1px 0 rgba(255, 252, 252, 0.25);
+  background-image: radial-gradient(circle at 50% 50%, #FF9D66 22%, #F25E0B 76%);
+}
+.mask-group-sql {
+  display: block;
+  flex-direction: column;
+  width: 1438px;
+  height: 449px;
+  padding: 34px 64px 0 180px;
+  box-shadow: 0 7.8px 7.8px 0 rgba(0, 0, 0, 0.25), inset 0 7.8px 22.1px 0 rgba(255, 252, 252, 0.25);
+  background-image: radial-gradient(circle at 50% 50%, #0BF0FF 12%, #2978D4 88%);
+}
+
+.mask-group-ruby {
+  display: block;
+  flex-direction: column;
+  width: 1438px;
+  height: 449px;
+  padding: 34px 64px 0 180px;
+  box-shadow: 0 7.8px 7.8px 0 rgba(0, 0, 0, 0.25), inset 0 7.8px 22.1px 0 rgba(255, 252, 252, 0.25);
+  background-image: radial-gradient(circle at 50% 50%, #FB3F3F 12%, #FF0000 88%);
+}
+
+.mask-group-javascript {
+  display: block;
+  flex-direction: column;
+  width: 1438px;
+  height: 449px;
+  padding: 34px 64px 0 180px;
+  box-shadow: 0 7.8px 7.8px 0 rgba(0, 0, 0, 0.25), inset 0 7.8px 22.1px 0 rgba(255, 252, 252, 0.25);
+  background-image: radial-gradient(circle at 50% 50%, #FFF500 12%, #F2A40B 88%);
+}
+.mask-group-python {
+  display: block;
+  flex-direction: column;
+  width: 1438px;
+  height: 449px;
+  padding: 34px 64px 0 180px;
+  box-shadow: 0 7.8px 7.8px 0 rgba(0, 0, 0, 0.25), inset 0 7.8px 22.1px 0 rgba(255, 252, 252, 0.25);
+  background-image: radial-gradient(circle at 50% 50%, #8929D4 12%, #0A07B5 88%);
+}
+
+.Domine-a-linguagem-mais-popular-do-mundo-utilizada-desde-para-desenvolvimento-de-aplicativos-mveis { 
+  margin-top: 30%;
+  padding-bottom: 0;
+  font-family: Mohave;
+  font-size: 25.1px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1.01px;
+  color: #fff;
+}
+.texto-alinhado {
+  width: 700px; 
+  word-wrap: break-word; 
+}
+
+
+.texto {
+  display: flex;
+  text-align: middle;
+  font-family: Mohave;
+  font-size: 35.4px;
+  line-height: 1;
+  text-align: center;
+  word-break: break-word;
+  color: #fff;
+  width: 149.4px;
+  height: 70px;
+  margin: 5.4px 158.1px 126.6px 7.8px;
+  letter-spacing: -1.77px;
+  line-height: 1;
+}
+
+
+.numero {
+  width: 74px;
+  height: 88px;
+  font-family: Mohave;
+  font-size: 88.4px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -4.42px;
+  text-align: center;
+  margin: 66px 13.4px 116px 138.1px;
+}
+
+.numerocorjava {
+  color: #f25e0b;
+}
+
+.numerocorhtmlecss{
+  color: #FD9459;
+}
+
+.numerocorsql {
+  color: #2978D4;
+}
+
+.numerocorruby {
+  color: #D10303;
+}
+
+.numerocorjavascript {
+  color: #F8C606;
+}
+
+.numerocorpython {
+  color: #8929D4;
+}
+
+
+.container-elementos {
+  position: relative;
+}
+
+
+.O-que-voc-vai-estudar- {
+  width: 404.5px;
+  height: 156px;
+  margin-left: 15%;
+  font-family: Mohave;
+  font-size: 78.3px;
+  line-height: 1;
+  letter-spacing: -3.92px;
+  text-align: left;
+  color: #fff;
+}
+.O-que-voc-vai-estudar- .simbolocorjava {
+  font-weight: 500;
+  font-style: italic;
+  color: #f25e0b;
+}
+
+.O-que-voc-vai-estudar- .simbolocorhtmlecss {
+  font-weight: 500;
+  font-style: italic;
+  color: #FD9459;
+}
+.O-que-voc-vai-estudar- .simbolocorsql {
+  font-weight: 500;
+  font-style: italic;
+  color: #2978D4;
+}
+.O-que-voc-vai-estudar- .simbolocorruby {
+  font-weight: 500;
+  font-style: italic;
+  color: #D10303;
+}
+.O-que-voc-vai-estudar- .simbolocorjavascript {
+  font-weight: 500;
+  font-style: italic;
+  color: #F8C606;
+}
+.O-que-voc-vai-estudar- .simbolocorpython {
+  font-weight: 500;
+  font-style: italic;
+  color: #8929D4;
+}
+
+
+.Conhea-os-contedos-dos-mdulos-da-Formao-Java-Developer {
+  width: 335.7px;
+  height: 54px;
+  margin: 15%;
+  font-family: Mohave;
+  font-size: 26.8px;
+  line-height: 1;
+  letter-spacing: -1.34px;
+  text-align: left;
+  color: #fff;
+}
+.Conhea-os-contedos-dos-mdulos-da-Formao-Java-Developer .text-style-1 {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.Rectangle-15 {
+  width: 570px;
+  height: 667px;
+  margin: 116px 129px 141px 0.1px;
+  padding: 31.5px 0.5px 0.5px 0.3px;
+  border-radius: 33.1px;
+  box-shadow: inset 0 3.7px 8.2px 0 rgba(0, 0, 0, 0.25), 0 3.7px 12.4px 2.8px rgba(214, 212, 212, 0.25);
+  background-color: #fff;
+  float: right;
+}
+
+.conteudo {
+  width: 296px;
+  height: 27px;
+  flex-grow: 0;
+  margin-left: 10%;
+  margin-bottom: 50%;
+  font-family: Mohave;
+  font-size: 26.8px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1.34px;
+  color: #04034f;
+}
+
+.atividade {
+  width: 63px;
+  height: 15px;
+  flex-grow: 0;
+  margin-left: 10%;
+  margin-bottom: 50%;
+  font-family: Mohave;
+  font-size: 15.4px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.77px;
+  color: #04034f;
+}
+
+
+
+
+
+
+
+
+
+
