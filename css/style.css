@@ -143,3 +143,11 @@ label {
     display: block;
     margin-bottom: 5px;
 }
+
+.Line-133 {
+    width: 5px;
+    height: 607px;
+    margin: 0 55.5px 0 55.5px;
+    transform: rotate(-270deg);
+    background-color: #ebebeb;
+}
