@@ -104,3 +104,42 @@ body {
  width: 120%;
  height: 120%;
 }
+.Fale-conosco {
+    width: 304px;
+    height: 71px;
+    margin: 123px 542px 10px 267px;
+    font-family: Mohave;
+    font-size: 70.8px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -3.54px;
+    text-align: left;
+    color: #fff;
+}
+
+.Talk-form{
+    width: 1148px;
+    height: 667px;
+    margin: 10px 120px 1429.3px 43.7px;
+    padding: 25px 54px 35px;
+    border-radius: 33.1px;
+    box-shadow: inset 0 3.7px 8.2px 0 rgba(0, 0, 0, 0.25), 0 3.7px 12.4px 2.8px rgba(214, 212, 212, 0.25);
+    background-color: #fff;
+}
+
+
+.column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+    .column:last-child {
+        margin-right: 0;
+    }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
