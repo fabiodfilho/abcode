@@ -29,45 +29,32 @@
             Fale conosco
         </h1>
 
-        <form class="Talk-form" method="post">
-   
-    <div class="Duvidas">
-        <label for="nomeDuvidas">Nome*</label>
-        <input type="text" id="nomeDuvidas" placeholder="Nome*" />
-        
-        <label for="emailDuvidas">E-mail*</label>
-        <input type="email" id="emailDuvidas" placeholder="E-mail*" />
-        
-        <label for="cursoDuvidas">Curso</label>
-        <input type="text" id="cursoDuvidas" placeholder="Curso" />
-        
-        <label for="textoDuvidas">Mensagem</label>
-        <textarea id="textoDuvidas" name="texto" cols="25" rows="4"></textarea>
-    </div>
-
-    <div class="Contato">
-        <label for="nomeContato">Nome*</label>
-        <input type="text" id="nomeContato" placeholder="Nome*" />
-        
-        <label for="emailContato">E-mail*</label>
-        <input type="email" id="emailContato" placeholder="E-mail*" />
-        
-        <label for="estadoContato">Estado</label>
-        <input type="text" id="estadoContato" placeholder="Estado" />
-        
-        <label for="cidadeContato">Cidade</label>
-        <input type="text" id="cidadeContato" placeholder="Cidade" />
-        
-        <label for="cursoContato">Curso</label>
-        <input type="text" id="cursoContato" placeholder="Curso" />
-        
-        <label for="textoContato">Mensagem</label>
-        <textarea id="textoContato" name="texto" cols="25" rows="4"></textarea>
-    </div>
-
-    <button type="submit">Enviar</button>
-</form>
-        
+        <table class="Talk-form" cellpadding="5">
+            <tr>
+                <td>
+                    <h2>Dúvidas</h2>
+                    <form method="post">
+                        <input type="text" placeholder="Nome*" /><br>
+                        <input type="email" placeholder="E-mail*" /><br>
+                        <input type="text" placeholder="Curso" /><br>
+                        <textarea name="texto" cols="25" rows="4"></textarea><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </td>
+                <td>
+                    <h2>Contato</h2>
+                    <form method="post">
+                        <input type="text" placeholder="Nome*" /><br>
+                        <input type="email" placeholder="E-mail*" /><br>
+                        <input type="text" placeholder="Estado" /><br>
+                        <input type="text" placeholder="Cidade" /><br>
+                        <input type="text" placeholder="Curso" /><br>
+                        <textarea placeholder="Digite aqui..." name="texto" cols="25" rows="4"></textarea><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
     </main>
 </body>
 </html>
