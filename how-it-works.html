@@ -72,8 +72,41 @@
         </section>
 
         <audio controls>
-            <source src="\audios\como-funciona.mp3" type="audio/mp3">
+            <source src="como-funciona.mp3" type="audio/mp3">
             seu navegador não suporta HTML5
             </audio>
+
+            <h1 class="Fale-conosco">
+                Fale conosco
+            </h1>
+    
+            <table class="Talk-form" cellpadding="5">
+                <tr>
+                    <td>
+                        <span class="Duvidas"> Dúvidas </span>
+                        <form action="https://formsubmit.co/jessica.luiz@maisunifacisa.com.br" method="POST">
+                            <input type="hidden" name="_subject" value="Nova duvida pelo formulário do ABCODE">
+                            <input class="form-container" type="text" placeholder="Nome*" required /><br>
+                            <input class="form-container" type="email" placeholder="E-mail*" required /><br>
+                            <input class="form-container" type="text" placeholder="Curso" /><br>
+                            <textarea class="form-container" placeholder="Digite aqui..." name="texto" cols="25" rows="4"></textarea><br>
+                            <button class="button" type="submit">Enviar</button>
+                        </form>
+                    </td>
+                    <td>
+                        <span class="Contato"> Contato </span>
+                        <form action="https://formsubmit.co/jessica.luiz@maisunifacisa.com.br" method="POST"  >
+                            <input type="hidden" name="_subject" value="Novo contato pelo formulário DO ABCODE">
+                            <input class="form-container" type="text" placeholder="Nome*" required /><br>
+                            <input class="form-container" type="email" placeholder="E-mail*" required /><br>
+                            <input class="form-container" type="text" placeholder="Estado" /><br>
+                            <input class="form-container" type="text" placeholder="Cidade" /><br>
+                            <input class="form-container" type="text" placeholder="Curso" /><br>
+                            <textarea class="form-container" placeholder="Digite aqui..." name="texto" cols="25" rows="4"></textarea><br>
+                            <button class="button" type="submit">Enviar</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
 </body>
 </html>
