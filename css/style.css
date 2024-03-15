@@ -119,6 +119,30 @@ body {
   color: #fff;
 }
 
+.titulovideos {
+  position: absolute;
+  top: 43%;
+  left: 19%;
+  margin-bottom: 10px;
+  font-family: Mohave;
+  font-size: 140px; /* tamanho da font */
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -8.88px;
+  color: #fff;
+}
+
+.bottom {
+  margin-left: 15%;
+  margin-bottom: 15%;
+  font-family: Mohave;
+  font-size: 57px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 8.88px;
+  color: #fff;
+}
+
 .mask-group-java {
   display: block;
   flex-direction: column;
