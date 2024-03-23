@@ -51,3 +51,7 @@
     padding: 2%;
     background-image: linear-gradient(to bottom, #04034f 0%, #8929d4);
   }
+
+  img.Group-26 {
+    position: fixed;
+  }
