@@ -1,3 +1,9 @@
+  body {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
   .A-programao-para-todos {
     font-family: Mohave;
     font-size: 136.9px;
@@ -29,31 +35,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh; 
-    padding-left: 4%;
+    min-height: 20vh; 
+    padding-left: 30%;
+    padding-right: 30%;
   }
   
   .table_cursos {
     display: flex;
+    align-items: center;
     justify-content: center;
     th, td {
       padding-top: 10px;
       padding-bottom: 20px;
-      padding-left: 30px;
-      padding-right: 40px;
+      padding-left: 60px;
+      padding-right: 70px;
     }
     
   }
   
   .table_cursos_img {
-   width: 120%;
-   height: 120%;
+    align-items: center;
+    width: 130%; /* Aumenta a largura das imagens */
+    height: 130%; /* Aumenta a altura das imagens */
   }
 
   .table_column_ecossistema {
     display: flex;
     align-items: center;
     flex-direction: column;  
+  }
+
+  .table_ecossistema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120%;
+    height: 120%;
+    
   }
   
   .Ensino-gratuito-e-aberto-para-todo-o-mundo {
@@ -99,6 +117,22 @@
     height: 113.4px;
   }
 
-  @media (max-width:1024px) {
-    
+  @media (max-width:1488px) {
+    .table_cursos {
+      overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
+      display: inline-block; /* Evita que a tabela "saia" da tela */
+      max-width: 1467px; /* Garante que a tabela não ultrapasse a largura da tela */
+      align-items: center;
+      justify-content: center;
+      padding-left: 8%;
+      padding-right: 8%;
+    } .container {
+      overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
+      display: inline-block; /* Evita que a tabela "saia" da tela */
+      max-width: 1467px;
+      max-height: 1629px;
+      
+    }
+
   }
+  
