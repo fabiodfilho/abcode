@@ -44,6 +44,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
+    width: auto;
+    height: auto;
+
     th, td {
       padding-top: 10px;
       padding-bottom: 20px;
@@ -55,23 +59,23 @@
   
   .table_cursos_img {
     align-items: center;
-    width: 130%; /* Aumenta a largura das imagens */
-    height: 130%; /* Aumenta a altura das imagens */
-  }
-
-  .table_column_ecossistema {
-    display: flex;
-    align-items: center;
-    flex-direction: column;  
+    min-width: 80%; /* Evita que a imagem diminua abaixo de 150px de largura */
+    min-height: 80%; /* Evita que a imagem diminua abaixo de 150px de altura */
   }
 
   .table_ecossistema {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120%;
-    height: 120%;
-    
+    width: auto;
+    height: auto;
+  }
+  
+  .table_column_ecossistema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
   }
   
   .Ensino-gratuito-e-aberto-para-todo-o-mundo {
@@ -121,7 +125,6 @@
     .table_cursos {
       overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
       display: inline-block; /* Evita que a tabela "saia" da tela */
-      max-width: 1467px; /* Garante que a tabela não ultrapasse a largura da tela */
       align-items: center;
       justify-content: center;
       padding-left: 8%;
@@ -129,10 +132,17 @@
     } .container {
       overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
       display: inline-block; /* Evita que a tabela "saia" da tela */
-      max-width: 1467px;
-      max-height: 1629px;
+      align-items: center;
+      justify-content: center;
       
+    } .table_ecossistema {
+      overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
+      display: inline-block; /* Evita que a tabela "saia" da tela */
+      align-items: center;
+      justify-content: center;
+      padding-left: 275px;
     }
+
 
   }
   
