@@ -6,6 +6,7 @@
   }
   
   body {
+    height: 2768px;
     background-image: linear-gradient(to bottom, #000, #0a071d);
   }
   
@@ -19,15 +20,12 @@
   
   .header {
     justify-content: space-between;
-    display: flex;
-    padding: 0 4% 4%;
+    padding: 0 4%;
     height: 10em;
-    width: auto;
   }
   
   .navigation_header {
     gap: 2em;
-    align-items: center;
   }
   
   .navigation_header a {
@@ -58,13 +56,6 @@
     position: fixed;
   }
 
-  @media (max-width:1024px) {
-    .header {
-      display: flex;
-      gap: 50px;
-    }
-
-    .navigation_header {
-      padding-left: 30%;
-    }
+  :link:hover {
+    outline: red;
   }
