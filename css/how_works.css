@@ -1,0 +1,70 @@
+.A-programao-para-todos {
+    font-family: Mohave;
+    font-size: 136.9px;
+    line-height: 1;
+    letter-spacing:normal;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .A-programao-para-todos .text-style-1 {
+    font-size: 144.5px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: -7.22px;
+  }
+
+  .nome_barra_mkt {
+    position: static;
+    width: 707px;
+  }
+  
+  .img_barra_mkt {
+    position: static;
+  }
+  
+  .container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; 
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: Mohave;
+    font-size: 200%;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .img_barra_01, .img_barra_02, .img_barra_03, .uma-plataforma-dedicada, .bem-vindo, .pronto, .botao-cadastrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 25px;
+
+  }
+
+  .container p {
+    color: black; 
+}
+  .container_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Mohave;
+    font-size: 200%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  
