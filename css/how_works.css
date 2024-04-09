@@ -67,4 +67,22 @@
     padding: 20px;
   }
 
+  .botao-cadastrar {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 1px;
+  }
+  
+  .botao-cadastrar img {
+    width: 20%; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  /* Efeitos de hover opcionais */
+  .botao-cadastrar:hover {
+    opacity: 0.8;
+  }
+  
+
   
