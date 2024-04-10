@@ -1,54 +1,10 @@
-.A-programao-para-todos {
-    font-family: Mohave;
-    font-size: 136.9px;
-    line-height: 1;
-    letter-spacing:normal;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .A-programao-para-todos .text-style-1 {
-    font-size: 144.5px;
-    font-weight: 500;
-    font-style: italic;
-    line-height: 1;
-    letter-spacing: -7.22px;
-  }
-
-  .nome_barra_mkt {
-    position: static;
-    width: 707px;
-  }
-  
-  .img_barra_mkt {
-    position: static;
-  }
-  
-  .container {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh; 
-    padding-left: 5%;
-    padding-right: 5%;
-    font-family: Mohave;
-    font-size: 200%;
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #333;
-    color: #000000;
-    background-color: #ffffff;
-  }
-
-  .img_barra_01, .img_barra_02, .img_barra_03, .uma-plataforma-dedicada, .bem-vindo, .pronto, .botao-cadastrar {
+   .img_barra_01, .img_barra_02, .img_barra_03, .uma-plataforma-dedicada, .bem-vindo, .pronto, .botao-cadastrar {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    margin: 25px;
+    margin: 2% 2%; 
 
   }
 
@@ -75,14 +31,21 @@
   }
   
   .botao-cadastrar img {
-    width: 20%; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 20%; 
+    height: auto; 
   }
-  
-  /* Efeitos de hover opcionais */
-  .botao-cadastrar:hover {
-    opacity: 0.8;
+
+  /**/
+
+@media (max-width: 720px) {
+  .img_barra_01, .img_barra_02, .img_barra_03, .uma-plataforma-dedicada, .bem-vindo, .pronto, .botao-cadastrar {
+    width: 40%;
   }
-  
+
+  .botao-cadastrar img {
+      width: 40%; /* Reduzir o tamanho da imagem */
+  }
+}
+
 
   

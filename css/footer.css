@@ -1,0 +1,23 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: black;
+    color: #ffffff;
+    font-family: Mohave;
+    font-size: 12px;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.foot-img {
+    display: block; /* Para centralizar a imagem horizontalmente */
+    margin: 0 auto; /* Centraliza horizontalmente a imagem */
+}

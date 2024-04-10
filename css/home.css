@@ -6,7 +6,7 @@
   
   .A-programao-para-todos {
     font-family: Mohave;
-    font-size: 136.9px;
+    font-size: 8rem;
     line-height: 1;
     letter-spacing: -6.85px;
     text-align: middle;
@@ -14,7 +14,7 @@
   }
   
   .A-programao-para-todos .text-style-1 {
-    font-size: 144.5px;
+    font-size: 8rem;
     font-weight: 500;
     font-style: italic;
     line-height: 1;
@@ -120,6 +120,18 @@
     width: 113.4px;
     height: 113.4px;
   }
+
+
+  .table_cursos_img:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    
+  }
+  
+  
 
   @media (max-width:1488px) {
     .table_cursos {

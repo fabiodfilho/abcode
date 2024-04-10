@@ -1,0 +1,35 @@
+html,body{
+    height: 100%;
+    }
+    
+    .form-containerrr{
+    max-width: 700px;
+    padding: 1rem;
+    background-color: white; 
+    border-radius: 6%;      
+    padding: 50px;
+    }
+
+
+#form_cadastrar_aqui {
+    font-family: Mohave;
+    font-size: 20px;
+    letter-spacing: -0.61px;
+    color: gray;
+    cursor: pointer;
+}
+
+  .main_teste {
+    padding-top: 2%;
+}
+
+
+html {
+    height: 100vw;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 95vw;
+    }
+  }
