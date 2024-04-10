@@ -16,6 +16,17 @@
     color: #fff;
   }
 
+    .navigation_header a:hover {
+      transition: 0.3s ease-in-out; 
+      color: #a954f5; 
+      transform: translateY(-5px); 
+  }
+
+  .ret_botao_navigation:hover {
+      background-image: linear-gradient(to bottom, #0f0c54 0%, #9e3fdd);
+      border-color: #6525b5;
+  }
+
   a {
     text-decoration:none !important
   }
