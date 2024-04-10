@@ -5,11 +5,21 @@ html,body{
     .form-containerrr{
     max-width: 350px;
     padding: 1rem;
-    background-color: white; /* Define o fundo branco */
-    border-radius: 6%;       /* Define o raio da borda */
+    background-color: white; 
+    border-radius: 6%;      
     padding: 20px;
     }
+
 
 .teste {
     margin-right: 15px;
 }
+
+#form_cadastrar_aqui {
+    font-family: Mohave;
+    font-size: 20px;
+    letter-spacing: -0.61px;
+    color: gray;
+    cursor: pointer;
+}
+

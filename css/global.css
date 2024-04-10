@@ -11,6 +11,11 @@
     letter-spacing: -1.61px;
     color: #fff;
   }
+
+  a {
+    text-decoration:none !important
+  }
+
   body {
     background-image: linear-gradient(to bottom, #000, #0a071d);
   }
@@ -29,6 +34,11 @@
     padding: 0 4% 4%;
     height: 10em;
     width: auto;
+    
+  }
+
+  .header, login {
+    padding-top: 4%;
   }
   
   .navigation_header {
