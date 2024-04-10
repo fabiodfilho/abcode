@@ -1,14 +1,18 @@
 .navigation_header {
     font-family: Mohave;
-    font-size: 32.3px;
+    font-size: 2rem;
     letter-spacing: -1.61px;
     color: #fff;
   }
   
+  html {
+    font-size: 16px;
+  }
+
   h3 {
     font-family: Mohave;
     font-size: 32.3px;
-    letter-spacing: -1.61px;
+    letter-spacing: -1px;
     color: #fff;
   }
 
@@ -35,10 +39,6 @@
     height: 10em;
     width: auto;
     
-  }
-
-  .header, login {
-    padding-top: 4%;
   }
   
   .navigation_header {
@@ -74,13 +74,27 @@
     position: fixed;
   }
 
-  @media (max-width:1024px) {
+  @media (max-width:958px) {
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: start; 
+    }
+  
     .header {
       display: flex;
       gap: 50px;
     }
-
+  
     .navigation_header {
       padding-left: 30%;
     }
+  
+    main {
+      width: 100%; 
+      max-width: 960px; 
+      margin: 0 auto; 
+      padding: 20px; 
+    }
   }
+  

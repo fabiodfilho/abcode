@@ -3,17 +3,13 @@ html,body{
     }
     
     .form-containerrr{
-    max-width: 350px;
+    max-width: 700px;
     padding: 1rem;
     background-color: white; 
     border-radius: 6%;      
-    padding: 20px;
+    padding: 50px;
     }
 
-
-.teste {
-    margin-right: 15px;
-}
 
 #form_cadastrar_aqui {
     font-family: Mohave;
@@ -23,3 +19,17 @@ html,body{
     cursor: pointer;
 }
 
+  .main_teste {
+    padding-top: 2%;
+}
+
+
+html {
+    height: 100vw;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 95vw;
+    }
+  }
