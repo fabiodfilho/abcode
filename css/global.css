@@ -5,6 +5,12 @@
     color: #fff;
   }
   
+  h3 {
+    font-family: Mohave;
+    font-size: 32.3px;
+    letter-spacing: -1.61px;
+    color: #fff;
+  }
   body {
     background-image: linear-gradient(to bottom, #000, #0a071d);
   }

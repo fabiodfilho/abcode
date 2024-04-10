@@ -1,0 +1,15 @@
+html,body{
+    height: 100%;
+    }
+    
+    .form-containerrr{
+    max-width: 350px;
+    padding: 1rem;
+    background-color: white; /* Define o fundo branco */
+    border-radius: 6%;       /* Define o raio da borda */
+    padding: 20px;
+    }
+
+.teste {
+    margin-right: 15px;
+}
