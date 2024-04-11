@@ -1,0 +1,29 @@
+  .texto-cursos-centralizado {
+    text-align: center;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    margin: 5%;
+    align-items: center;
+    font-family: Mohave;
+    font-size: 150%;
+  }
+
+  .table_cursos_img {
+    align-items: center;
+    min-width: 80%; 
+    min-height: 80%;
+  }
+
+  @media (max-width:1488px) {
+    .table_cursos {
+      overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
+      display: inline-block; /* Evita que a tabela "saia" da tela */
+      align-items: center;
+      justify-content: center;
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+}
