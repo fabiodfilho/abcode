@@ -59,8 +59,8 @@ body {
 
 .table_cursos_img {
   align-items: center;
-  min-width: 80%; /* Evita que a imagem diminua abaixo de 150px de largura */
-  min-height: 80%; /* Evita que a imagem diminua abaixo de 150px de altura */
+  min-width: 80%; 
+  min-height: 80%;
 }
 
 
@@ -129,21 +129,21 @@ body {
 
 @media (max-width:1488px) {
   .table_cursos {
-    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
-    display: inline-block; /* Evita que a tabela "saia" da tela */
+    overflow-x: auto; 
+    display: inline-block; 
     align-items: center;
     justify-content: center;
     padding-left: 8%;
     padding-right: 8%;
   } .container {
-    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
-    display: inline-block; /* Evita que a tabela "saia" da tela */
+    overflow-x: auto; 
+    display: inline-block; 
     align-items: center;
     justify-content: center;
     
   } .table_ecossistema {
-    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
-    display: inline-block; /* Evita que a tabela "saia" da tela */
+    overflow-x: auto; 
+    display: inline-block; 
     align-items: center;
     justify-content: center;
     padding-left: 275px;
