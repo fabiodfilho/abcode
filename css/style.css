@@ -264,16 +264,6 @@ li{
   color: #fff;
 }
 
-.Talk-form {
-  width: 1148px;
-  height: 667px;
-  margin: 10px auto 1429.3px auto;
-  padding: 25px 54px 35px;
-  border-radius: 33.1px;
-  box-shadow: inset 0 3.7px 8.2px 0 rgba(0, 0, 0, 0.25), 0 3.7px 12.4px 2.8px rgba(214, 212, 212, 0.25);
-  background-color: #fff;
-}
-
 .column {
     flex: 1;
     margin-right: 10px;
@@ -326,14 +316,6 @@ label {
   background-image: linear-gradient(to bottom, #04034f 0%, #8929d4);
 }
 
-.form-container {
-  width: 231px;
-  height: 32px; 
-  margin: 8.5px 27.75px 9px 0; 
-  padding: 8.5px 184px 8.5px 11.5px; 
-  border-radius: 10.5px; 
-  background-color: #f0f0f0;
-}
 
 .Duvidas {
   width: 119px;
