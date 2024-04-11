@@ -1,3 +1,7 @@
+html,body{
+  height: 100%;
+  }
+      
    .img_barra_01, .img_barra_02, .img_barra_03, .uma-plataforma-dedicada, .bem-vindo, .pronto, .botao-cadastrar {
     display: flex;
     justify-content: center;
