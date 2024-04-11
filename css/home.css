@@ -1,160 +1,227 @@
-  body {
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+body {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.A-programao-para-todos {
+  font-family: Mohave;
+  font-size: 8rem;
+  line-height: 1;
+  letter-spacing: -6.85px;
+  text-align: middle;
+  color: #fff;
+}
+
+.A-programao-para-todos .text-style-1 {
+  font-size: 8rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -7.22px;
+}
+
+
+.nome_barra_mkt {
+  position: static;
+  width: 707px;
+}
+
+.img_barra_mkt {
+  position: static;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh; 
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.table_cursos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  width: auto;
+  height: auto;
+
+  th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 70px;
   }
   
-  .A-programao-para-todos {
-    font-family: Mohave;
-    font-size: 8rem;
-    line-height: 1;
-    letter-spacing: -6.85px;
-    text-align: middle;
-    color: #fff;
-  }
+}
+
+.table_cursos_img {
+  align-items: center;
+  min-width: 80%; /* Evita que a imagem diminua abaixo de 150px de largura */
+  min-height: 80%; /* Evita que a imagem diminua abaixo de 150px de altura */
+}
+
+
+.table_column_ecossistema {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+.Ensino-gratuito-e-aberto-para-todo-o-mundo {
+  width: 204.8px;
+  height: 106.5px;
+  font-family: Mohave;
+  font-size: 28.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -1.43px;
+  text-align: center;
+  color: #fff;
+}
+.Ensino-gratuito-e-aberto-para-todo-o-mundo .text-style-1 {
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+.Trilha-de-carreiras-para-todo-tipo-de-perfis-profissionais {
+  width: 204.8px;
+  height: 106.5px;
+  font-family: Mohave;
+  font-size: 28.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -1.43px;
+  text-align: center;
+  color: #fff;
+}
+
+.Trilha-de-carreiras-para-todo-tipo-de-perfis-profissionais .text-style-1 {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.vector {
+  width: 113.4px;
+  height: 113.4px;
+  padding-bottom: 20px;
+}
+
+
+.table_cursos_img:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
   
-  .A-programao-para-todos .text-style-1 {
-    font-size: 8rem;
-    font-weight: 500;
-    font-style: italic;
-    line-height: 1;
-    letter-spacing: -7.22px;
-  }
-  
-  
-  .nome_barra_mkt {
-    position: static;
-    width: 707px;
-  }
-  
-  .img_barra_mkt {
-    position: static;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 20vh; 
-    padding-left: 30%;
-    padding-right: 30%;
-  }
-  
+}
+
+
+
+@media (max-width:1488px) {
   .table_cursos {
-    display: flex;
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
+    display: inline-block; /* Evita que a tabela "saia" da tela */
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
-    width: auto;
-    height: auto;
-
-    th, td {
-      padding-top: 10px;
-      padding-bottom: 20px;
-      padding-left: 60px;
-      padding-right: 70px;
-    }
+    padding-left: 8%;
+    padding-right: 8%;
+  } .container {
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
+    display: inline-block; /* Evita que a tabela "saia" da tela */
+    align-items: center;
+    justify-content: center;
     
-  }
-  
-  .table_cursos_img {
-    align-items: center;
-    min-width: 80%; /* Evita que a imagem diminua abaixo de 150px de largura */
-    min-height: 80%; /* Evita que a imagem diminua abaixo de 150px de altura */
-  }
-
-  .table_ecossistema {
-    display: flex;
+  } .table_ecossistema {
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
+    display: inline-block; /* Evita que a tabela "saia" da tela */
     align-items: center;
     justify-content: center;
-    width: auto;
-    height: auto;
-  }
-  
-  .table_column_ecossistema {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;  
-  }
-  
-  .Ensino-gratuito-e-aberto-para-todo-o-mundo {
-    width: 204.8px;
-    height: 106.5px;
-    font-family: Mohave;
-    font-size: 28.5px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: -1.43px;
-    text-align: center;
-    color: #fff;
-  }
-  .Ensino-gratuito-e-aberto-para-todo-o-mundo .text-style-1 {
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  
-  .Trilha-de-carreiras-para-todo-tipo-de-perfis-profissionais {
-    width: 204.8px;
-    height: 106.5px;
-    font-family: Mohave;
-    font-size: 28.5px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: -1.43px;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .Trilha-de-carreiras-para-todo-tipo-de-perfis-profissionais .text-style-1 {
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .vector {
-    width: 113.4px;
-    height: 113.4px;
+    padding-left: 275px;
   }
 
 
-  .table_cursos_img:hover {
-    opacity: 0.7;
-    transition: opacity 0.2s ease-in-out;
+}
 
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
-    
+
+.table-ecossistema {
+  
+  
+  th, td {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 50px;
   }
-  
-  
-
-  @media (max-width:1488px) {
-    .table_cursos {
-      overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
-      display: inline-block; /* Evita que a tabela "saia" da tela */
-      align-items: center;
-      justify-content: center;
-      padding-left: 8%;
-      padding-right: 8%;
-    } .container {
-      overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
-      display: inline-block; /* Evita que a tabela "saia" da tela */
-      align-items: center;
-      justify-content: center;
-      
-    } .table_ecossistema {
-      overflow-x: auto; /* Adiciona uma barra de rolagem horizontal */
-      display: inline-block; /* Evita que a tabela "saia" da tela */
-      align-items: center;
-      justify-content: center;
-      padding-left: 275px;
-    }
+}
 
 
-  }
+.name_ecossistema {
+  color: #FFF;
+  font-family: Mohave;
+  font-size: 64.484px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 64.484px */
+  letter-spacing: -3.224px;
+  display: block;
   
+}
+
+.name_eco_style2 {
+  color: #FFF;
+  font-family: Mohave;
+  font-size: 64.484px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -3.224px;
+}
+
+.grid_home { 
+    display: grid;
+    grid-template-columns: 400px 400px; 
+    gap: 20px; 
+    padding: 20px;
+    align-items:center;
+    max-width: 960px; 
+    width: 90%; 
+    margin: auto;
+}
+
+.home_text {
+  text-align: left;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  padding-top: 50px;  
+  padding-bottom: 150px;
+}
+
+.reminder_text {
+  color: #FFF;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Jost;
+  font-size: 57.553px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -1.727px;
+}
+
+
+
+
+

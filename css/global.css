@@ -7,6 +7,7 @@
   
   html {
     font-size: 16px;
+    
   }
 
   h3 {
@@ -96,11 +97,20 @@
       display: flex;
       gap: 50px;
     }
+
+    .footer {
+      display: flex;
+      gap: 50px;
+    }
   
     .navigation_header {
       padding-left: 30%;
     }
   
+    .navigation_footer{
+      padding-left: 30%;
+    }
+
     main {
       width: 100%; 
       max-width: 960px; 
@@ -110,9 +120,14 @@
   }
   
 
+  .icon_logo:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+  
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
 
-
-  /* Estilos para animação de slide */
 .slide-out {
   animation: slideOut 0.5s ease-in-out forwards;
 }
@@ -139,3 +154,53 @@
   }
 }
 
+
+.footer {
+  justify-content: space-between;
+  display: flex;
+  padding: 3% 7% 7%;
+  height: 10em;
+  width: auto;
+  background-color: black;
+  padding-bottom: 3%;
+  
+}
+
+.navigation_footer {
+  gap: 0.5em;
+  align-items: center;
+  font-family: Mohave;
+  font-size: 2rem;
+  letter-spacing: -1.61px;
+  color: #fff;
+}
+
+.navigation_footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: 1s;
+  white-space: nowrap;
+  
+  }
+
+
+  .footer,
+  .navigation_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .txt_link {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Mohave;
+    font-size: 27.852px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.393px;
+    text-align: right;
+    padding-bottom: 3%;
+  }
