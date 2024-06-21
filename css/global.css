@@ -204,3 +204,58 @@
     text-align: right;
     padding-bottom: 3%;
   }
+
+/* Estilo para a barra de acessibilidade */
+.acessibilidade-barra {
+  position: fixed;
+  display: flex;
+  flex-direction: column; /* Alinha itens verticalmente */
+  align-items: center; /* Centraliza itens horizontalmente */
+  gap: 10px; /* Espaço entre os ícones */
+  padding: 20px 0; /* Espaço interno vertical para centralizar os ícones */
+
+  /* Imagem de fundo */
+  background-image: url('/images/barra_de_acessibilidade.svg');
+  background-size: contain; /* Ajusta a imagem para caber dentro do elemento */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-position: center; /* Centraliza a imagem de fundo */
+
+  /* Dimensões da barra */
+  width: 40px; /* Ajusta a largura da barra */
+  height: auto; /* Deixa a altura automática baseada no conteúdo */
+
+  /* Adiciona algum espaçamento interno */
+  padding: 20px;
+
+}
+
+/* Estilo para os ícones */
+.acessibilidade_icon {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.acessibilidade_icon:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos específicos para cada ícone */
+#acessibilidade_icon_aumentar {
+  width: 80%; /* Ajusta o tamanho do ícone */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+#acessibilidade_icon_diminuir {
+  width: 80%; /* Ajusta o tamanho do ícone */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+#acessibilidade_icon_contraste {
+  width: 80%; /* Ajusta o tamanho do ícone */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+#acessibilidade_icon_audio {
+  width: 100%; /* Ajusta o tamanho do ícone */
+  height: auto; /* Mantém a proporção da imagem */
+}
