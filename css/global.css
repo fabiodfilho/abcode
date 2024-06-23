@@ -1,181 +1,65 @@
 .navigation_header {
-    font-family: Mohave;
-    font-size: 2rem;
-    letter-spacing: -1.61px;
-    color: #fff;
-  }
-  
-  html {
-    font-size: 16px;
-    
-  }
-
-  h3 {
-    font-family: Mohave;
-    font-size: 32.3px;
-    letter-spacing: -1px;
-    color: #fff;
-  }
-
-    .navigation_header a:hover {
-      transition: 0.3s ease-in-out; 
-      color: #a954f5; 
-      transform: translateY(-5px); 
-  }
-
-  .ret_botao_navigation:hover {
-      background-image: linear-gradient(to bottom, #0f0c54 0%, #9e3fdd);
-      border-color: #6525b5;
-  }
-
-  a {
-    text-decoration:none !important
-  }
-
-  body {
-    background-image: linear-gradient(to bottom, #000, #0a071d);
-  }
-  
-  .header,
-  .navigation_header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-  }
-  
-  .header {
-    justify-content: space-between;
-    display: flex;
-    padding: 0 4% 4%;
-    height: 10em;
-    width: auto;
-    
-  }
-  
-  .navigation_header {
-    gap: 2em;
-    align-items: center;
-  }
-  
-  .navigation_header a {
-    text-decoration: none;
-    color: #fff;
-    transition: 1s;
-    white-space: nowrap;
-    
-    }
-  
-  .ret_botao_navigation {
-    -webkit-text-stroke: 1.6px #000;
-    font-family: Mohave;
-    font-size: 43px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: -2.15px;
-    text-align: center;
-    color: #fff;
-  
-    border-radius: 17.1px;
-    border: solid 1.6px #000;
-    padding: 2%;
-    background-image: linear-gradient(to bottom, #04034f 0%, #8929d4);
-  }
-
-  img.Group-26 {
-    position: fixed;
-  }
-
-  @media (max-width:958px) {
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: start; 
-    }
-  
-    .header {
-      display: flex;
-      gap: 50px;
-    }
-
-    .footer {
-      display: flex;
-      gap: 50px;
-    }
-  
-    .navigation_header {
-      padding-left: 30%;
-    }
-  
-    .navigation_footer{
-      padding-left: 30%;
-    }
-
-    main {
-      width: 100%; 
-      max-width: 960px; 
-      margin: 0 auto; 
-      padding: 20px; 
-    }
-  }
-  
-
-  .icon_logo:hover {
-    opacity: 0.7;
-    transition: opacity 0.2s ease-in-out;
-  
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
-  }
-
-.slide-out {
-  animation: slideOut 0.5s ease-in-out forwards;
-}
-
-.slide-in {
-  animation: slideIn 0.5s ease-in-out forwards;
-}
-
-@keyframes slideOut {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-
-.footer {
-  justify-content: space-between;
-  display: flex;
-  padding: 3% 7% 7%;
-  height: 10em;
-  width: auto;
-  background-color: black;
-  padding-bottom: 3%;
-  
-}
-
-.navigation_footer {
-  gap: 0.5em;
-  align-items: center;
   font-family: Mohave;
   font-size: 2rem;
   letter-spacing: -1.61px;
   color: #fff;
 }
 
-.navigation_footer a {
+html {
+  font-size: 16px;
+  
+}
+
+h3 {
+  font-family: Mohave;
+  font-size: 32.3px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+  .navigation_header a:hover {
+    transition: 0.3s ease-in-out; 
+    color: #a954f5; 
+    transform: translateY(-5px); 
+}
+
+.ret_botao_navigation:hover {
+    background-image: linear-gradient(to bottom, #0f0c54 0%, #9e3fdd);
+    border-color: #6525b5;
+}
+
+a {
+  text-decoration:none !important
+}
+
+body {
+  background-image: linear-gradient(to bottom, #000, #0a071d);
+}
+
+
+.header,
+.navigation_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.header {
+  justify-content: space-between;
+  display: flex;
+  padding: 0 4% 4%;
+  height: 10em;
+  width: auto;
+  
+}
+
+.navigation_header {
+  gap: 2em;
+  align-items: center;
+}
+
+.navigation_header a {
   text-decoration: none;
   color: #fff;
   transition: 1s;
@@ -183,24 +67,302 @@
   
   }
 
+.ret_botao_navigation {
+  -webkit-text-stroke: 1.6px #000;
+  font-family: Mohave;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -2.15px;
+  text-align: center;
+  color: #fff;
 
-  .footer,
-  .navigation_footer {
+  border-radius: 17.1px;
+  border: solid 1.6px #000;
+  padding: 2%;
+  background-image: linear-gradient(to bottom, #04034f 0%, #8929d4);
+}
+
+img.Group-26 {
+  position: fixed;
+}
+
+@media (max-width:958px) {
+  body {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    
+    justify-content: center;
+    align-items: start; 
   }
 
-  .txt_link {
-    color: #FFF;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Mohave;
-    font-size: 27.852px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -1.393px;
-    text-align: right;
-    padding-bottom: 3%;
+  .header {
+    display: flex;
+    gap: 50px;
   }
+
+  .footer {
+    display: flex;
+    gap: 50px;
+  }
+
+  .navigation_header {
+    padding-left: 30%;
+  }
+
+  .navigation_footer{
+    padding-left: 30%;
+  }
+
+  main {
+    width: 100%; 
+    max-width: 960px; 
+    margin: 0 auto; 
+    padding: 20px; 
+  }
+}
+
+
+.icon_logo:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.slide-out {
+animation: slideOut 0.5s ease-in-out forwards;
+}
+
+.slide-in {
+animation: slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes slideOut {
+from {
+  transform: translateX(0);
+}
+to {
+  transform: translateX(-100%);
+}
+}
+
+@keyframes slideIn {
+from {
+  transform: translateX(100%);
+}
+to {
+  transform: translateX(0);
+}
+}
+
+
+.footer {
+justify-content: space-between;
+display: flex;
+padding: 3% 7% 7%;
+height: 10em;
+width: auto;
+background-color: black;
+padding-bottom: 3%;
+
+}
+
+.navigation_footer {
+gap: 0.5em;
+align-items: center;
+font-family: Mohave;
+font-size: 2rem;
+letter-spacing: -1.61px;
+color: #fff;
+}
+
+.navigation_footer a {
+text-decoration: none;
+color: #fff;
+transition: 1s;
+white-space: nowrap;
+
+}
+
+
+.footer,
+.navigation_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.txt_link {
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Mohave;
+  font-size: 27.852px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -1.393px;
+  text-align: right;
+  padding-bottom: 3%;
+}
+
+/* Estilo para a barra de acessibilidade */
+.acessibilidade-barra {
+position: fixed;
+display: flex;
+flex-direction: column; /* Alinha itens verticalmente */
+align-items: center; /* Centraliza itens horizontalmente */
+gap: 10px; /* Espaço entre os ícones */
+
+/* Imagem de fundo */
+background-image: url('/images/barra_de_acessibilidade.svg');
+background-size: contain; /* Ajusta a imagem para caber dentro do elemento */
+background-repeat: no-repeat; /* Evita que a imagem se repita */
+background-position: center; /* Centraliza a imagem de fundo */
+
+/* Dimensões da barra */
+width: 40px; /* Ajusta a largura da barra */
+height: auto; /* Deixa a altura automática baseada no conteúdo */
+
+/* Adiciona algum espaçamento interno */
+padding: 9px;
+
+}
+
+.acessibilidade-barra:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out; 
+  transform: translateY(-5px); 
+
+}
+
+/* Estilo para os ícones */
+.acessibilidade_icon {
+cursor: pointer;
+transition: transform 0.2s;
+}
+
+.acessibilidade_icon:hover {
+transform: scale(1.1);
+}
+
+/* Estilos específicos para cada ícone */
+#acessibilidade_icon_aumentar {
+width: 80%; /* Ajusta o tamanho do ícone */
+height: auto; /* Mantém a proporção da imagem */
+}
+
+#acessibilidade_icon_diminuir {
+width: 80%; /* Ajusta o tamanho do ícone */
+height: auto; /* Mantém a proporção da imagem */
+}
+
+#acessibilidade_icon_contraste {
+width: 80%; /* Ajusta o tamanho do ícone */
+height: auto; /* Mantém a proporção da imagem */
+}
+
+#acessibilidade_icon_audio {
+width: 100%; /* Ajusta o tamanho do ícone */
+height: auto; /* Mantém a proporção da imagem */
+}
+/**/
+
+body.light-theme {
+background-image: linear-gradient(
+    to bottom, 
+    #ffffff,  /* Branco no topo */
+    #f0f0f0,  /* Cinza claro */
+    #d0e7ff,  /* Azul claro */
+    #f3e5ff   /* Lilás claro no final */
+);
+color: #000;
+min-height: 100vh; /* Garantir que o body ocupa a altura total da tela */
+margin: 0;
+}
+
+/* Estilos para o <main> no tema claro */
+body.light-theme main {
+background-color: transparent; /* Torna o fundo do <main> transparente */
+color: #000; /* Texto preto para o conteúdo do <main> */
+position: relative; /* Mantém a posição sem sobrescrever o body */
+}
+
+.light-theme .footer,
+.light-theme .navigation_footer {
+background-color: #ffffff; /* Fundo claro para header e footer */
+
+}
+
+.light-theme .navigation_header a,
+.light-theme .navigation_footer a,
+.light-theme .txt_link {
+color: #000; /* Links em cor preta */
+}
+
+.light-theme .navigation_header a:hover {
+transition: 0.3s ease-in-out; 
+color: #7673FF; 
+transform: translateY(-5px); 
+
+}
+
+.light-theme .ret_botao_navigation {
+-webkit-text-stroke: 0.8px #7673FF;
+color: #000000; /* Texto do botão em cor preta */
+background-image: linear-gradient(to bottom, #2E29FF 0%, #7673FF); /* Fundo do botão claro */
+border-color: #ffffff; /* Borda do botão em cor preta */
+}
+
+.light-theme .ret_botao_navigation:hover {
+background-image: linear-gradient(to bottom, #2E29FF 0%, #7673FF); /* Efeito hover para o botão */
+border-color: #7673FF; /* Borda mais escura no hover */
+}
+
+.light-theme .acessibilidade-barra {
+  background-image: url('/images/light_barra_de_acessibilidade.svg');
+
+}
+
+.light-theme .acessibilidade_icon {
+filter: invert(1); /* Inverte as cores dos ícones para melhor visualização no tema claro */
+}
+
+/* Especificando mudanças de cores para a home */
+.light-theme .A-programao-para-todos,
+.light-theme .Ensino-gratuito-e-aberto-para-todo-o-mundo,
+.light-theme .Trilha-de-carreiras-para-todo-tipo-de-perfis-profissionais,
+.light-theme .name_ecossistema,
+.light-theme .name_eco_style2,
+.light-theme .reminder_text {
+color: #000; /* Texto em cor preta */
+}
+
+.light-theme .A-programao-para-todos .text-style-1,
+.light-theme .Ensino-gratuito-e-aberto-para-todo-o-mundo .text-style-1,
+.light-theme .Trilha-de-carreiras-para-todo-tipo-de-perfis-profissionais .text-style-1 {
+color: #000; /* Texto em cor preta */
+}
+
+.light-theme .table_cursos th,
+.light-theme .table_cursos td,
+.light-theme .table_cursos_img,
+.light-theme .table_column_ecossistema,
+.light-theme .table-ecossistema th,
+.light-theme .table-ecossistema td,
+.light-theme .vector {
+color: #000; /* Texto em cor preta */
+background-color: transparent; /* Altera o fundo para transparente */
+}
+
+.light-theme .container,
+.light-theme .grid_home,
+.light-theme .center-container {
+background-color: transparent; /* Altera o fundo para transparente */
+}
+
+
+.light-theme .icon_logo {
+filter: invert(1); /* Muda as cores dos ícones para preto no modo claro */
+}
+

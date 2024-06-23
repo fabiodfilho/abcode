@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback - ABCode Python</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="container-feedback">
+        <div class="titulo-feedback">
+            <h2>Seu Feedback é Importante!</h2>
+            <p>Ajude-nos a melhorar o curso de Python da ABCode.</p>
+        </div>
+        <form class="form-feedback">
+            <div class="avaliacao">
+                <label for="avaliacao-geral">Avaliação Geral:</label>
+                <select id="avaliacao-geral">
+                    <option value="1">1 - Ruim</option>
+                    <option value="2">2 - Regular</option>
+                    <option value="3">3 - Bom</option>
+                    <option value="4">4 - Ótimo</option>
+                    <option value="5">5 - Excelente</option>
+                </select>
+            </div>
+            <div class="comentarios">
+                <label for="comentarios">Comentários (opcional):</label>
+                <textarea id="comentarios" rows="5"></textarea>
+            </div>
+            <button type="submit" class="botao-enviar">Enviar Feedback</button>
+        </form>
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>

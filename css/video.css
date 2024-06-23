@@ -1,0 +1,96 @@
+
+.desafio-container {
+    width: 800px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desafio-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 33.13px;
+    background: #FFF;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.desafio-header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.desafio-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #000;
+}
+
+.desafio-header .desafio-numero {
+    font-size: 36px;
+    color: #FF4500;
+}
+
+.desafio-header p {
+    font-size: 18px;
+    color: #000;
+}
+
+.desafio-video  iframe {
+    border-radius: 31.997px;
+    border: 4px solid #8929D4;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.desafio-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    border-radius: 28px;
+    border: 4px solid #632495;
+    background: #8E00FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Mohave', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.desafio-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+}
+
+.nav-btn {
+    border-radius: 28px;
+    border: 4px solid #632495;
+    background: #8E00FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Mohave', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 20px;
+    cursor: pointer;
+}

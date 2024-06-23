@@ -27,6 +27,7 @@
 .cor-python {
   --cor-fundo: radial-gradient(circle at 50% 50%, #8929D4 12%, #0A07B5 88%)
 }
+
 .titulo {
   font-family: Mohave;
   font-size: 9vw; 
@@ -252,6 +253,7 @@ li{
   position: absolute;
 }
 
+
 .carreiras, .tabela_sl, .Rectangle-15{
   z-index: 1;
 }
@@ -370,6 +372,13 @@ label {
   text-align: left;
   color: #04034f;
 }
+ 
+.light-theme .texto, 
+.light-theme .middle, 
+.light-theme .middle-2, 
+.light-theme .Rectangle-15 {
+color: black;
 
+}
 
 

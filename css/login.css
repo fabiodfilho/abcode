@@ -23,6 +23,9 @@ html,body{
     padding-top: 2%;
 }
 
+.form-control {
+  background: transparent;
+}
 
 html {
     height: 100vw;

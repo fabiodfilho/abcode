@@ -82,8 +82,7 @@ function carregarCurso(cursoNome) {
 }
 // Carregar o curso quando a página for carregada
 document.addEventListener('DOMContentLoaded', () => {
-    // Extraia o nome do curso a partir da URL ou outro mecanismo
     const urlParams = new URLSearchParams(window.location.search);
-    const cursoNome = urlParams.get('curso') || 'python';  // Exemplo: ?curso=python
+    const cursoNome = urlParams.get('curso') || 'python'; 
     carregarCurso(cursoNome);
 });
