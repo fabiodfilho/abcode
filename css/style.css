@@ -1,3 +1,4 @@
+
 .principal {
   display: flex;
   flex-direction: column;
@@ -72,7 +73,6 @@
   max-width: 200px;
 
 }
-
 
 #textomod {
   margin-left: 0%;
@@ -196,6 +196,7 @@
   font-size: 26.8px;
   font-weight: 500;
 }
+
 .atividade {
   width: 63px;
   height: 15px;
@@ -254,6 +255,20 @@ li{
 .carreiras, .tabela_sl, .Rectangle-15{
   z-index: 1;
 }
+
+
+.numero, .texto, .conteudo, .atividade {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.numero:hover, .texto:hover {
+  transform: translateY(-10px);
+  color: #8929d4; 
+}
+.conteudo:hover, .atividade:hover {
+  transform: translateY(-10px);
+  color: #8929d4; 
+}
+
 
 
  .Fale-conosco {
@@ -355,5 +370,6 @@ label {
   text-align: left;
   color: #04034f;
 }
+
 
 
