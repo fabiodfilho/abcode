@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <main>
     <header class="header" id="header">
         <div class="logo_header">
             <a href="/home.html"><img src="/images/logoABC.svg" class="img_logo_header" alt="Logo ABCode"></a>
@@ -25,8 +26,21 @@
         </nav>
     </header>
     
-    <main>
-        <img src="/images/barra_acessibilidade.svg" class="Group-26" alt="Barra de acessibilidade">
+        <div class="acessibilidade-barra">
+            <a id="increase-font-size">
+                <img src="/images/acessibilidade_A+.png" alt="Aumentar o tamanho da fonte" class="acessibilidade_icon" id="acessibilidade_icon_aumentar">
+            </a>
+            <a id="decrease-font-size">
+                <img src="/images/acessibilidade_A-.png" alt="Diminuir o tamanho da fonte" class="acessibilidade_icon" id="acessibilidade_icon_diminuir">
+            </a>
+            <a id="toggle-high-contrast">
+                <img src="/images/acessibilidade_contraste.png" alt="Alto contraste" class="acessibilidade_icon" id="acessibilidade_icon_contraste">
+            </a>
+            <a id="read-text">
+                <img src="/images/acessibilidade_audio.png" alt="Ler texto" class="acessibilidade_icon" id="acessibilidade_icon_audio">
+            </a>
+        </div>
+
         <section class="principal cor-python">    
             <div class="titulo">PYTHON</div>
             <div class="texto-inicial" id="descricao-curso"></div>
@@ -54,7 +68,8 @@
     </main>
 
 
-    <script src="cursos.js"></script>
+    <script src="/javascript/cursos.js"></script>
+    <script src="/javascript/events.js"></script>
 
 
 </body>

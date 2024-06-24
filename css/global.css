@@ -266,7 +266,20 @@ height: auto; /* Mantém a proporção da imagem */
 width: 100%; /* Ajusta o tamanho do ícone */
 height: auto; /* Mantém a proporção da imagem */
 }
-/**/
+
+#acessibilidade_icon_pause {
+  width: 100%; /* Ajusta o tamanho do ícone */
+  height: auto; /* Mantém a proporção da imagem */
+  }
+
+#acessibilidade_icon_stopped {
+  width: 100%; /* Ajusta o tamanho do ícone */
+  height: auto; /* Mantém a proporção da imagem */
+  }
+
+.hidden {
+  display: none;
+}
 
 body.light-theme {
 background-image: linear-gradient(
@@ -320,7 +333,7 @@ border-color: #7673FF; /* Borda mais escura no hover */
 }
 
 .light-theme .acessibilidade-barra {
-  background-image: url('/images/light_barra_de_acessibilidade.svg');
+  background-image: url('/images/light_barra_de_acessibilidade.png');
 
 }
 

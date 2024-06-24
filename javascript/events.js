@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Obtenha o botão e os links de dados
     const button = document.getElementById('redirectButton');
     const links = [
         "https://github.com/04julxa",
@@ -17,30 +16,30 @@ document.addEventListener('DOMContentLoaded', function() {
         // Redirecione para o link escolhido
         window.location.href = randomLink;
     });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Seleciona os elementos da barra de acessibilidade
     const increaseFontSizeBtn = document.getElementById('acessibilidade_icon_aumentar');
     const decreaseFontSizeBtn = document.getElementById('acessibilidade_icon_diminuir');
     const toggleHighContrastBtn = document.getElementById('acessibilidade_icon_contraste');
-    const readTextBtn = document.getElementById('acessibilidade_icon_audio');
+    const readTextBtn = document.getElementById('read-text');
+    const pauseTextBtn = document.getElementById('pause-text');
+    const stoppedTextBtn = document.getElementById('stop-text');
 
-    // Variável para armazenar o tamanho atual da fonte
-    let currentFontSize = 16; // Tamanho base de fonte em pixels
-
-    // Função para aumentar o tamanho da fonte
-    increaseFontSizeBtn.addEventListener('click', function() {
-        currentFontSize += 2;
-        document.body.style.fontSize = currentFontSize + 'px';
+    function adjustFontSize(multiplier) {
+        const elements = document.querySelectorAll('body *'); // Seleciona todos os elementos dentro do body
+        elements.forEach(el => {
+            const currentFontSize = window.getComputedStyle(el).fontSize;
+            const currentSize = parseFloat(currentFontSize);
+            el.style.fontSize = `${currentSize * multiplier}px`;
+        });
+    }
+    
+    // Adiciona os eventos de clique aos botões
+    increaseFontSizeBtn.addEventListener('click', () => {
+        adjustFontSize(1.1); // Aumenta o tamanho da fonte em 10%
     });
-
-    // Função para diminuir o tamanho da fonte
-    decreaseFontSizeBtn.addEventListener('click', function() {
-        if (currentFontSize > 10) { // Limite mínimo para legibilidade
-            currentFontSize -= 2;
-            document.body.style.fontSize = currentFontSize + 'px';
-        }
+    
+    decreaseFontSizeBtn.addEventListener('click', () => {
+        adjustFontSize(0.9); // Diminui o tamanho da fonte em 10%
     });
 
     // Função para alternar entre temas claro e escuro
@@ -62,20 +61,87 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    readTextBtn.addEventListener('click', function() {
-        let textContent = document.body.innerText; // Seleciona todo o texto do corpo da página
+    let utterance = null;
+    let isReading = false;
+    let isPaused = false;
 
-        // Adiciona o alt das imagens ao texto
-        const images = document.getElementsByTagName('img');
-        for (let img of images) {
-            if (img.alt) {
-                textContent += ' ' + img.alt;
+    function startReading() {
+        if (!isReading) {
+            let textContent = document.body.innerText;
+
+            // Adiciona o alt das imagens ao texto
+            const images = document.getElementsByTagName('img');
+            for (let img of images) {
+                if (img.alt) {
+                    textContent += ' ' + img.alt;
+                }
             }
+
+            utterance = new SpeechSynthesisUtterance(textContent);
+            utterance.lang = 'pt-BR';
+
+            utterance.onstart = function() {
+                isReading = true;
+                isPaused = false;
+                setButtonState('pause');
+            };
+
+            utterance.onend = function() {
+                isReading = false;
+                isPaused = false;
+                setButtonState('play');
+            };
+
+            window.speechSynthesis.speak(utterance);
         }
+    }
 
-        let utterance = new SpeechSynthesisUtterance(textContent);
-        utterance.lang = 'pt-BR'; // Define o idioma (ajuste conforme necessário)
+    function pauseReading() {
+        if (isReading && !isPaused) {
+            window.speechSynthesis.pause();
+            isPaused = true;
+            setButtonState('stopped');
+        }
+    }
 
-        window.speechSynthesis.speak(utterance); // Usa a API Web Speech para ler o texto em voz alta
+    function resumeReading() {
+        if (isPaused) {
+            window.speechSynthesis.resume();
+            isPaused = false;
+            setButtonState('pause');
+        }
+    }
+
+    function setButtonState(state) {
+        if (state === 'play') {
+            readTextBtn.querySelector('img').src = 'images/acessibilidade_audio.png';
+            readTextBtn.classList.remove('hidden');
+            pauseTextBtn.classList.add('hidden');
+            stoppedTextBtn.classList.add('hidden');
+        } else if (state === 'pause') {
+            readTextBtn.querySelector('img').src = 'images/acessibilidade_audio_pausa.png';
+            readTextBtn.classList.add('hidden');
+            pauseTextBtn.classList.remove('hidden');
+            stoppedTextBtn.classList.add('hidden');
+        } else if (state === 'stopped') {
+            readTextBtn.querySelector('img').src = 'images/acessibilidade_audio_stopped.png';
+            readTextBtn.classList.add('hidden');
+            pauseTextBtn.classList.add('hidden');
+            stoppedTextBtn.classList.remove('hidden');
+        }
+    }
+
+    readTextBtn.addEventListener('click', startReading);
+    pauseTextBtn.addEventListener('click', pauseReading);
+    stoppedTextBtn.addEventListener('click', resumeReading);
+
+    // Inicializa os botões no estado inicial (a iniciar)
+    setButtonState('play');
+
+    // Evento para finalizar o áudio ao recarregar a página
+    window.addEventListener('beforeunload', function() {
+        if (isReading) {
+            window.speechSynthesis.cancel();
+        }
     });
 });
