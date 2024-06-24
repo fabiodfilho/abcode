@@ -1,4 +1,3 @@
-
 const cursos = {
     "python": {
         "titulo": "Python Developer",
@@ -40,36 +39,72 @@ const cursos = {
         ]
     },
 };
+
 function carregarDescricao(curso) {
     const descricaoCurso = document.getElementById('descricao-curso');
-    descricaoCurso.innerHTML = curso.descricao;
+    if (descricaoCurso) {
+        descricaoCurso.innerHTML = curso.descricao;
+    } else {
+        console.error("Elemento de descrição do curso não encontrado.");
+    }
 }
 
 function carregarDados(curso) {
     const dadosCurso = document.getElementById('dados-curso');
-    dadosCurso.innerHTML = `
-        <div class="container-info">
-            <div class="numero numerocorpython">${curso.dados.horasConteudo}</div>
-            <div class="texto">Horas de conteúdo</div>
-            <div class="numero numerocorpython">${curso.dados.projetos}</div>
-            <div class="texto" id="textomod">Projetos para o seu portfólio</div>
-            <div class="numero numerocorpython">${curso.dados.desafios}</div>
-            <div class="texto" id="textomod">Desafios de código</div>
-        </div>
-    `;
-
+    if (dadosCurso) {
+        dadosCurso.innerHTML = `
+            <div class="container-info">
+                <div class="numero numerocorpython">${curso.dados.horasConteudo}</div>
+                <div class="texto">Horas de conteúdo</div>
+                <div class="numero numerocorpython">${curso.dados.projetos}</div>
+                <div class="texto" id="textomod">Projetos para o seu portfólio</div>
+                <div class="numero numerocorpython">${curso.dados.desafios}</div>
+                <div class="texto" id="textomod">Desafios de código</div>
+            </div>
+        `;
+    } else {
+        console.error("Elemento de dados do curso não encontrado.");
+    }
 }
+
 function carregarModulos(curso) {
     const modulosCurso = document.getElementById('modulos-curso');
-    modulosCurso.innerHTML = curso.modulos.map(modulo => `
-        <ul>
-            <li><span class="conteudo">${modulo.titulo}</span></li>
-            <br>
-            <li><span class="atividade">${modulo.atividades} atividades</span></li>
-            <br>
-        </ul>
-    `).join('');
+    if (modulosCurso) {
+        modulosCurso.innerHTML = curso.modulos.map((modulo, index) => {
+            const completed = isModuleCompleted(curso.titulo, index);
+            return `
+                <ul>
+                    <li>
+                        <span class="conteudo">${modulo.titulo}</span>
+                        <input type="checkbox" id="modulo-${index}" ${completed ? 'checked' : ''} 
+                               onchange="toggleCompletion('${curso.titulo}', ${index})">
+                    </li>
+                    <br>
+                    <li><span class="atividade">${modulo.atividades} atividades</span></li>
+                    <br>
+                </ul>
+            `;
+        }).join('');
+    } else {
+        console.error("Elemento de módulos do curso não encontrado.");
+    }
 }
+
+function isModuleCompleted(cursoTitulo, moduloIndex) {
+    const completedModules = JSON.parse(localStorage.getItem(cursoTitulo)) || [];
+    return completedModules.includes(moduloIndex);
+}
+
+function toggleCompletion(cursoTitulo, moduloIndex) {
+    let completedModules = JSON.parse(localStorage.getItem(cursoTitulo)) || [];
+    if (completedModules.includes(moduloIndex)) {
+        completedModules = completedModules.filter(index => index !== moduloIndex);
+    } else {
+        completedModules.push(moduloIndex);
+    }
+    localStorage.setItem(cursoTitulo, JSON.stringify(completedModules));
+}
+
 function carregarCurso(cursoNome) {
     const curso = cursos[cursoNome];
     if (curso) {
@@ -80,6 +115,7 @@ function carregarCurso(cursoNome) {
         console.error("Curso não encontrado:", cursoNome);
     }
 }
+
 // Carregar o curso quando a página for carregada
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
