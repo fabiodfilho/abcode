@@ -1,22 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('redirectButton');
-    const links = [
-        "https://github.com/04julxa",
-        "https://github.com/WOOB0T",
-        "https://github.com/renatacmantovani",
-        "https://github.com/fabiodfilho"
-    ];
-
-    // Adicione um evento de clique ao botão
-    button.addEventListener('click', function() {
-        // Escolha aleatoriamente um link
-        const randomIndex = Math.floor(Math.random() * links.length);
-        const randomLink = links[randomIndex];
-
-        // Redirecione para o link escolhido
-        window.location.href = randomLink;
-    });
-
     const increaseFontSizeBtn = document.getElementById('acessibilidade_icon_aumentar');
     const decreaseFontSizeBtn = document.getElementById('acessibilidade_icon_diminuir');
     const toggleHighContrastBtn = document.getElementById('acessibilidade_icon_contraste');
@@ -114,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setButtonState(state) {
         if (state === 'play') {
-            readTextBtn.querySelector('img').src = 'images/acessibilidade_audio.png';
+            readTextBtn.querySelector('img').src = '/images/acessibilidade_audio.png';
             readTextBtn.classList.remove('hidden');
             pauseTextBtn.classList.add('hidden');
             stoppedTextBtn.classList.add('hidden');

@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/cursos.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" type="imagex/png" href="/images/logoblog.svg">
+    <link rel="shortcut icon" type="imagex/png" href="images/logoblog.svg">
     <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body> 
     <main>
@@ -37,9 +41,17 @@
           <img src="/images/acessibilidade_contraste.png" alt="Alto contraste" class="acessibilidade_icon" id="acessibilidade_icon_contraste">
       </a>
       <a id="read-text">
-          <img src="/images/acessibilidade_audio.png" alt="Ler texto" class="acessibilidade_icon" id="acessibilidade_icon_audio">
+          <img src="/images/acessibilidade_audio.png" alt="Iniciar leitura" class="acessibilidade_icon" id="acessibilidade_icon_audio">
+      </a>
+      <a id="pause-text" class="hidden">
+          <img src="/images/acessibilidade_audio_pausa.png" alt="Pausar leitura" class="acessibilidade_icon" id="acessibilidade_icon_pause">
+      </a>
+      <a id="stop-text" class="hidden">
+          <img src="/images/acessibilidade_audio_stopped.png" alt="Parar leitura" class="acessibilidade_icon" id="acessibilidade_icon_stopped">
       </a>
   </div>
+
+
   
         <section class="principal cor-ruby">   
 
@@ -126,7 +138,9 @@
             <img class="textura" src="/images/textura.png" alt="textura">
           </section>
        
-          <script src="/javascript/events.js"></script>
+          <script src="/javascript/acessibility.js"></script>
+          <script src="/javascript/cursos.js"></script>
+          <script src="/javascript/footer.js"></script>
 
   
       </main>
