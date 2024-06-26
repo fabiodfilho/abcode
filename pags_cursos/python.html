@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <main>
     <header class="header" id="header">
         <div class="logo_header">
             <a href="/home.html"><img src="/images/logoABC.svg" class="img_logo_header" alt="Logo ABCode"></a>
@@ -24,9 +25,29 @@
             <a href="/cadastrar.html" class="ret_botao_navigation">CADASTRAR</a>
         </nav>
     </header>
-    
-    <main>
-        <img src="/images/barra_acessibilidade.svg" class="Group-26" alt="Barra de acessibilidade">
+        
+    <div class="acessibilidade-barra">
+        <a id="increase-font-size">
+            <img src="/images/acessibilidade_A+.png" alt="Aumentar o tamanho da fonte" class="acessibilidade_icon" id="acessibilidade_icon_aumentar">
+        </a>
+        <a id="decrease-font-size">
+            <img src="/images/acessibilidade_A-.png" alt="Diminuir o tamanho da fonte" class="acessibilidade_icon" id="acessibilidade_icon_diminuir">
+        </a>
+        <a id="toggle-high-contrast">
+            <img src="/images/acessibilidade_contraste.png" alt="Alto contraste" class="acessibilidade_icon" id="acessibilidade_icon_contraste">
+        </a>
+        <a id="read-text">
+            <img src="/images/acessibilidade_audio.png" alt="Iniciar leitura" class="acessibilidade_icon" id="acessibilidade_icon_audio">
+        </a>
+        <a id="pause-text" class="hidden">
+            <img src="/images/acessibilidade_audio_pausa.png" alt="Pausar leitura" class="acessibilidade_icon" id="acessibilidade_icon_pause">
+        </a>
+        <a id="stop-text" class="hidden">
+            <img src="/images/acessibilidade_audio_stopped.png" alt="Parar leitura" class="acessibilidade_icon" id="acessibilidade_icon_stopped">
+        </a>
+    </div>
+  
+
         <section class="principal cor-python">    
             <div class="titulo">PYTHON</div>
             <div class="texto-inicial" id="descricao-curso"></div>
@@ -43,8 +64,16 @@
                     <span class="text-style-1">Python Developer</span>
                 </div>
             </section>
+
             <section class="Rectangle-15" id="modulos-curso"></section>
         </div>
+
+        <section class="container-botoes">
+            <button class="botao-pagina-videos" onclick="window.location.href='videos.html'">Ir para Vídeos</button>
+            <button class="botao-pagina-feedback" onclick="window.location.href='feedback.html'">Enviar Feedback</button>
+        </section>
+    
+
         <section class="container-images">
             <img class="tabela_sl" src="/images/tabela_salario.png" alt="Tabela de salário desenvolvedor Python">
             <img class="carreiras" src="/images/carreiras.png" alt="Carreiras">
@@ -52,6 +81,10 @@
         </section>
     </main>
 
-    <script src="cursos.js"></script>
+
+    <script src="/javascript/acessibility.js"></script>
+    <script src="/javascript/cursos.js"></script>
+    <script src="/javascript/footer.js"></script>
+
 </body>
 </html>
