@@ -7,7 +7,6 @@ formLogin.addEventListener('submit', function(event) {
 
   const email = document.getElementById('floatingInput').value; 
   const senha = document.getElementById('floatingInput').value; 
-
   const usuarios = getUsuariosCadastrados();
   const usuario = usuarios.find(usuario => usuario.email === email && usuario.senha === senha);
 
@@ -21,4 +20,4 @@ formLogin.addEventListener('submit', function(event) {
 function getUsuariosCadastrados() {
   const usuariosString = localStorage.getItem('usuarios');
   return usuariosString ? JSON.parse(usuariosString) : [];
-}
+};
